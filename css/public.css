@@ -205,7 +205,7 @@ h3.menu-item-title {
   font-family: 'Courier New', Courier, monospace;
   font-size: medium;
   font-weight: bolder;
-  background-color:  #557c3e;
+  background-color:  white;
 }
 .signup-left button:hover{
   width: 50%;
@@ -217,27 +217,27 @@ h3.menu-item-title {
 .signup{
     padding: 20px;
     margin-bottom: 45%;
-    
+
 }
 .signup-left {
-  background-color: #f6b319;
+  background-color: white;
   width: 40%;
   width: 48%;
   float: left;
   padding: 20px;
-  
+
 }
 .signup-right{
-  background-color: #557c3e;
+  background-color: white;
   width: 50%;
     float: left;
     margin-left: 1em;
-  
+
 }
 .signup-right h1{
   margin-left: 1em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+
 
 }
 .signup h2{
@@ -258,7 +258,7 @@ h3.menu-item-title {
 }
 
 .menu-item-tile .row{
-  background-color: #3F0C1F;
+  background-color: white;
   margin-left: 2em;
   width: 100%;
 }
@@ -271,7 +271,7 @@ h3.menu-item-title {
 .myinfo{
   padding: 20px;
   margin-bottom: 40%;
-  
+
 }
 #myinfo-form{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -280,7 +280,7 @@ h3.menu-item-title {
 }
 
 .myinfo-me {
-background-color: #f6b319;
+background-color: white;
 width: 40%;
 width: 48%;
 float: left;
@@ -296,7 +296,7 @@ width: 50%;
 }
 
 .myinfo-alert div{
-  background-color: #660e2f;;
+  background-color: white;;
   color: rgb(255, 255, 255);
   border: 0ch;
 }
@@ -306,12 +306,12 @@ width: 50%;
 }
 .myinfo-alert button{
   margin: 1em;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: #3F0C1F;
   font-size: 2em;
   font-weight: bold;
-  
+
 }
 .myinfo-alert button:hover{
-  background-color: #f6b319;
+  background-color: white;
 }
