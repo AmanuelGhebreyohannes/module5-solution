@@ -12,7 +12,7 @@ function routeConfig ($stateProvider) {
   // Routes
   $stateProvider
     .state('public', {
-      absract: true,
+      abstract: true,
       templateUrl: 'src/public/public.html'
     })
     .state('public.home', {
@@ -41,28 +41,28 @@ function routeConfig ($stateProvider) {
         }]
       }
     })
-    .state('public.subscribe', {
-      url: '/subscribe',
-      templateUrl: 'src/public/subscribe/subscribe-form.html',
-      controller: 'SubscribeFormController as subscribeCtrl'
+    .state('public.signup', {
+      url: '/signup',
+      templateUrl: 'src/public/signup/signup.html',
+      controller: 'SignUpController',
+      controllerAs: 'signupCtrl',
+      
     })
-      .state('public.userpage', {
-        url: '/user',
-        templateUrl: 'src/public/user-page/user-page.html',
-        controller: 'UserPageController as userPageCtrl',
-        resolve: {
-          user: ['SubscribersService', function (SubscribersService) {
-            return SubscribersService.getLastSubscriber();
-          }],
-          menuItem: ['SubscribersService', 'MenuService', function (SubscribersService, MenuService) {
-            var user = SubscribersService.getLastSubscriber();
-            if (user === undefined) {
-              return undefined;
-            }
-            var shortName = user.favoriteDish;
-            return MenuService.getItem(shortName);
-          }]
-        }
-      })
+    .state('public.myinfo', {
+      url: '/myinfo',
+      templateUrl: 'src/public/myinfo/myinfo.html',
+      controller: 'MyInfoController',
+      controllerAs: 'myinfoCtrl',
+      resolve: {
+        userInfo: ['MyInfoService', function(MyInfoService) {
+          return MyInfoService.getInfo();
+        }]
+        
+      }
+    })
+    
+    
+    
+    ;
 }
 })();
