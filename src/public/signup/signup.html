@@ -9,7 +9,7 @@
 
             <form name="signupForm" novalidate>
 
-                    <div>
+                    <div class="form-group">
                         <label for="firstName">First Name</label><br>
                         <input type="text"
                               class="form-control"
@@ -24,10 +24,10 @@
                             <small>First name is required</small>
                         </span>
                         <span ng-if="signupForm.firstName.$error.minlength">
-                            <small>It should be at least 4 characters long !</small>
+                            <small>Name must be at least 4 characters long !</small>
                         </span>
                         <span ng-if="signupForm.firstName.$error.maxlength">
-                            <small>It should be less than 15 characters long !</small>
+                            <small>Name must be less than 15 characters long !</small>
                         </span>
                     </div>
                     <div class="form-group">
@@ -42,13 +42,13 @@
                               minlength="4"
                               maxlength="15">
                         <span ng-if="signupForm.lastName.$error.required && signupForm.lastName.$touched">
-                            <small>It is required</small>
+                            <small>Last name is required</small>
                         </span>
                         <span ng-if="signupForm.lastName.$error.minlength">
-                            <small>It should be at least 4 characters long !</small>
+                            <small>Last name must be at least 4 characters long !</small>
                         </span>
                         <span ng-if="signupForm.lastName.$error.maxlength">
-                            <small>It should be less than 15 characters long !</small>
+                            <small>Last name must be less than 15 characters long !</small>
                         </span>
                     </div>
 
@@ -62,7 +62,7 @@
                           ng-model="signupCtrl.userInfo.emailAddress"
                           required>
                     <span ng-if="signupForm.emailAddress.$invalid && signupForm.emailAddress.$touched">
-                        <small>enter valid email address</small>
+                        <small>Must be a valid email address: handle@domain format</small>
                     </span>
                 </div>
 
@@ -79,7 +79,7 @@
                           placeholder="Phone ###-###-####"
                           pattern="(\d{3})-(\d{3})-(\d{4})">
                     <span ng-if="signupForm.phoneNumber.$invalid && signupForm.phoneNumber.$touched">
-                        <small>enter in the format ###-###-####</small>
+                        <small>Phone must be in the format ###-###-####</small>
                     </span>
                 </div>
                 <div class="form-group">
@@ -92,7 +92,7 @@
                           ng-model="signupCtrl.userInfo.favouriteDish"
                           ng-blur="signupCtrl.validateFavdish()">
                     <span ng-if="signupCtrl.itemSearched && !signupCtrl.validShortCode">
-                        <small>No such dish name exists</small>
+                        <small>No such menu number exists</small>
                     </span>
 
 
