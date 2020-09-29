@@ -220,7 +220,7 @@ h3.menu-item-title {
 
 }
 .signup-left {
-  background-color: #f6b319;
+  background-color: #ffffff;
   width: 40%;
   width: 48%;
   float: left;
@@ -245,7 +245,7 @@ h3.menu-item-title {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 4em;
   margin-bottom: 1em;
-  color: #f6b319;
+  color: #ffffff;
 }
 
 
@@ -276,11 +276,11 @@ h3.menu-item-title {
 #myinfo-form{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 3em;
-  color: #f6b319;
+  color: #ffffff;
 }
 
 .myinfo-me {
-background-color: #f6b319;
+background-color: #ffffff;
 width: 40%;
 width: 48%;
 float: left;
@@ -313,5 +313,5 @@ width: 50%;
 
 }
 .myinfo-alert button:hover{
-  background-color: #f6b319;
+  background-color: #ffffff;
 }
